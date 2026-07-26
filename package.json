@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "project-cybersecurity-quiz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,5 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://wats3082.github.io/Game-Cybersecurity_React_Quiz/"
+  "homepage": "https://wats3082.github.io/Project-Cybersecurity-Quiz/"
 }
