@@ -17,14 +17,12 @@ const Question:FC = ():ReactElement => {
   const helpChances = quizContext!.state.helpChances
   const askedHelp = quizContext?.state.askedHelp
   
-  const helpDisabled = helpChances <= 0 
-    ? "help-disabled disabled" 
-    : null 
+  const helpDisabled = helpChances <= 0
 
   return (
     <>
 
-      <div className="question container">
+      <div className="question container surface-card">
         <p 
           className="question-text"
         >
@@ -48,20 +46,23 @@ const Question:FC = ():ReactElement => {
         
         <div className="action-btns-wrap">
           
-          <div
-            className={`help-btn action-btn ${helpDisabled}`}
+          <button
+            type="button"
+            className={`help-btn action-btn ${helpDisabled ? "help-disabled" : ""}`}
+            disabled={helpDisabled}
             onClick={() => dispatch && dispatch({type:allowedActions.ASK_HELP, payload:null})}
           >
             <span className="action-btn-text">Help</span>
             <span className="help-chances">{helpChances}</span>
-          </div>
+          </button>
 
-          <div 
+          <button 
+            type="button"
             className="next-btn action-btn"
             onClick={() => dispatch && dispatch({type:allowedActions.NEXT_QUESTION, payload:null})}
           >
             <span className="action-btn-text">Next question</span>
-          </div>
+          </button>
 
         </div>
       </div>

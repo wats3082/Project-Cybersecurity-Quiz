@@ -1,28 +1,27 @@
 .result-wrap {
   width: 100%;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .result-header {
   margin-top: 10px;
-  border-radius: 14px;
-  border: 1px solid #2a3d65;
+  border-radius: 16px;
   padding: 18px 14px;
-  background: linear-gradient(180deg, rgba(16, 24, 44, 0.95) 0%, rgba(10, 15, 26, 0.95) 100%);
 }
 
 .result-wrap p {
-  color: #f8fafc;
-  font-size: 1rem;
-  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .result-body {
   margin-top: 10px;
-  border-radius: 14px;
-  border: 1px solid #2a3d65;
+  border-radius: 16px;
   padding: 16px;
-  background: linear-gradient(180deg, rgba(16, 24, 44, 0.95) 0%, rgba(10, 15, 26, 0.95) 100%);
 }
 
 .result-body span,
@@ -32,7 +31,7 @@
 
 .result-body span {
   margin: 10px 0;
-  color: #bfdbfe;
+  color: #e4e4e7;
 }
 
 .result-body small {
@@ -43,12 +42,15 @@
   margin-top: 16px;
   width: 100%;
   color: #fff;
-  background: linear-gradient(90deg, #635bff 0%, #4f46e5 100%);
-  font-size: 0.94rem;
-  font-weight: 600;
-  height: 40px;
+  background: linear-gradient(90deg, #ef4444 0%, #f43f5e 100%);
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  height: 44px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(239, 68, 68, 0.3);
 }
 
 .score-wrap {
@@ -60,5 +62,5 @@
 
 .score-amount {
   font-weight: 700;
-  color: #60a5fa;
+  color: #fb7185;
 }

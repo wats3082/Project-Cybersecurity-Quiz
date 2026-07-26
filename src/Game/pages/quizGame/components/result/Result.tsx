@@ -20,11 +20,11 @@ const ShowResult:FC = ():ReactElement => {
   return (
     <div className="result-wrap">
       
-      <div className="result-header">
-        <p>Great job 👏👏👏</p>
+      <div className="result-header container surface-card">
+        <p>Mission complete</p>
       </div>
       
-      <div className="result-body container">
+      <div className="result-body container surface-card">
         
         <small className="stars-wrap">
           {getStarsIcons(calcAssertPercetage())}

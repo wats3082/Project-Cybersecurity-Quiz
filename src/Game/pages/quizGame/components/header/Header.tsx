@@ -11,14 +11,21 @@ const Header:FC = (): ReactElement => {
   const totalQuestions = quizContext?.state.questions.length 
   const currentQuestionIndex = quizContext?.state.currentQuestionIndex
   const currentQuestionIndexShow = currentQuestionIndex! + 1 
+  const progress = Math.round((currentQuestionIndexShow / totalQuestions!) * 100)
   const life = quizContext!.state.life
 
   return (
     <>
-      <div className="header">
-        <span className="score">Score: {score}</span>
-        <span className="index">Question {currentQuestionIndexShow} of {totalQuestions}</span>
-        <span className="score" style={{marginTop: ".5rem"}}>{getLifeIcons(life)}</span>
+      <div className="header container surface-card">
+        <div className="header-topline">
+          <span className="score">Score: {score}</span>
+          <span className="index">Question {currentQuestionIndexShow} of {totalQuestions}</span>
+          <span className="progress-percentage">{progress}%</span>
+        </div>
+        <div className="progress-track">
+          <span style={{width: `${progress}%`}} />
+        </div>
+        <span className="life-wrap">{getLifeIcons(life)}</span>
       </div>
     </>
   )

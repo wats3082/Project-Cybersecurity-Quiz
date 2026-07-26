@@ -7,6 +7,7 @@ import {UniversalContext, TopicInterface} from "../../contexts/UniversalContext"
 
 interface SingleTopicProps {
   topic: string;
+  isSelected: boolean;
   onSelectTopic: (topic:string) => void;
 }
 
@@ -14,18 +15,17 @@ const SingleTopic:FC<SingleTopicProps> = (props):ReactElement => {
   
   return (
     <div 
-      className="topic"
+      className={`topic ${props.isSelected ? "topic-selected" : ""}`}
       onClick={() => {
         props.onSelectTopic(props.topic)
-        document.getElementById(`${props.topic}`)?.click()
       }}
     >
       <div className="topic-icon">
-        <span>x + 1</span>
+        <span>QZ</span>
       </div>
       
       <div className="topic-details">
-        <input className="checkTopic" type="checkbox" id={props.topic} />
+        <input className="checkTopic" type="checkbox" checked={props.isSelected} readOnly />
         <span className="topic-name">{props.topic}</span>
       </div>
 
@@ -53,7 +53,7 @@ const Topics:FC = ():ReactElement => {
         : topic 
     })
     setAvalibleTopics(newAvalibleTopics)
-    const newSelectedTopics = avalibleTopics.filter(topic => {
+    const newSelectedTopics = newAvalibleTopics.filter(topic => {
       return topic.isSelected
     })
     
@@ -69,9 +69,10 @@ const Topics:FC = ():ReactElement => {
   const navigate = useNavigate()
   return (
     <div className="topics-wrap container">
-      <div className="welcome-wrap">
-        <span className="welc-message">Hi, welcome to <strong>BrainQuiz</strong></span>
-        <span className="welc-feeling">Are you feeling yourself Smart? choose a topic(s) to get started.</span>
+      <div className="welcome-wrap surface-card">
+        <span className="welc-message">Cyber Defense Briefing</span>
+        <span className="welc-heading">Welcome to <strong>BrainQuiz</strong></span>
+        <span className="welc-feeling">Select one or more topics to begin your security challenge.</span>
       </div>  
       
       <div className="topics">
@@ -79,6 +80,7 @@ const Topics:FC = ():ReactElement => {
           avalibleTopics.map((topic, index) => (
             <SingleTopic 
               topic={topic.topic} 
+              isSelected={topic.isSelected}
               key={index}
               onSelectTopic={topic => handleOnSelectTopic(topic)}
             />
@@ -87,10 +89,10 @@ const Topics:FC = ():ReactElement => {
       </div>
       <div className="actions-btns">
         <button 
-          className={`start-btn ${selectedTopicsCount > 0 ? null: "disabled-btn"}`}
+          className={`start-btn ${selectedTopicsCount > 0 ? "" : "disabled-btn"}`}
           onClick={() => navigate("/play")}
         >
-          Start
+          Start Quiz
         </button>
       </div>
     </div>

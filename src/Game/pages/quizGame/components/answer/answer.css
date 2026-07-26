@@ -1,9 +1,16 @@
 .answer {
-  border: 1px solid #334b77;
+  border: 1px solid rgba(244, 63, 94, 0.24);
   margin: 0 0 8px;
   min-height: 54px;
-  border-radius: 12px;
-  background: rgba(17, 25, 44, 0.75);
+  border-radius: 13px;
+  background: rgba(30, 31, 44, 0.8);
+  transition: border-color 0.16s ease, transform 0.16s ease, background-color 0.16s ease;
+}
+
+.answer:hover {
+  border-color: rgba(244, 63, 94, 0.55);
+  transform: translateY(-1px);
+  background: rgba(37, 38, 54, 0.88);
 }
 
 .answer-option {
@@ -21,7 +28,7 @@
 
 .answer-letter p {
   padding: 4px 8px;
-  background-color: #3b82f6;
+  background-color: #f43f5e;
   border-radius: 999px;
   font-size: 0.76rem;
   font-weight: 700;
@@ -29,18 +36,19 @@
 
 .answer-text {
   flex: 84%;
-  padding-right: 10px;
+  padding: 6px 12px 6px 8px;
 }
 
 .answer-text p {
-  color: #e2e8f0;
+  color: #f4f4f5;
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.35;
 }
 
 .correct-answer {
-  border-color: #22c55e;
+  border-color: #22c55e !important;
+  background: rgba(22, 101, 52, 0.26);
 }
 
 .correct-answer .answer-letter p {
@@ -48,7 +56,8 @@
 }
 
 .wrong-answer {
-  border-color: #ef4444;
+  border-color: #ef4444 !important;
+  background: rgba(127, 29, 29, 0.34);
 }
 
 .wrong-answer .answer-letter p {
@@ -60,5 +69,5 @@
 }
 
 .help-answer {
-  background: linear-gradient(90deg, rgba(59, 130, 246, 0.32) 0%, rgba(17, 25, 44, 0.75) 65%);
+  background: linear-gradient(90deg, rgba(244, 63, 94, 0.34) 0%, rgba(30, 31, 44, 0.88) 68%);
 }

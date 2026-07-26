@@ -9,17 +9,19 @@ import { Route, Routes } from 'react-router-dom'
 const App: FC = (): ReactElement => {
   return (
     <UniversalProvider>
-      <Routes>
-        <Route path="/" element={<ChooseTopic />} />
-        <Route
-          path="/play"
-          element={
-            <QuizProvider>
-              <QuizCore />
-            </QuizProvider>
-          }
-        />
-      </Routes>
+      <div className="app-shell">
+        <Routes>
+          <Route path="/" element={<ChooseTopic />} />
+          <Route
+            path="/play"
+            element={
+              <QuizProvider>
+                <QuizCore />
+              </QuizProvider>
+            }
+          />
+        </Routes>
+      </div>
     </UniversalProvider>
   )
 }
