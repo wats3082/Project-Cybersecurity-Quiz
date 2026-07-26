@@ -7,7 +7,7 @@
 .question-text {
   border-left: 4px solid #f43f5e;
   padding: 2px 0 2px 12px;
-  font-size: 1.06rem;
+  font-size: 0.99rem;
   font-weight: 700;
   line-height: 1.55;
   color: #ffffff;
@@ -29,7 +29,7 @@
   margin-top: 12px;
   color: #fff;
   border: none;
-  font-size: 0.86rem;
+  font-size: 0.8rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 700;
@@ -93,7 +93,7 @@
   }
 
   .question-text {
-    font-size: 1rem;
+    font-size: 0.94rem;
   }
 
   .action-btns-wrap {

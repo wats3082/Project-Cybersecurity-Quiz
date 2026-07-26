@@ -40,7 +40,7 @@
   padding: 4px 8px;
   background-color: #f43f5e;
   border-radius: 999px;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 
@@ -51,7 +51,7 @@
 
 .answer-text p {
   color: #f4f4f5;
-  font-size: 0.93rem;
+  font-size: 0.87rem;
   font-weight: 600;
   line-height: 1.45;
 }
@@ -99,6 +99,6 @@
   }
 
   .answer-text p {
-    font-size: 0.9rem;
+    font-size: 0.86rem;
   }
 }

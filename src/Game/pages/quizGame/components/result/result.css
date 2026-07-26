@@ -12,7 +12,7 @@
 
 .result-wrap p {
   color: #ffffff;
-  font-size: 1.08rem;
+  font-size: 0.98rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -33,6 +33,7 @@
   margin: 12px 0;
   color: #e4e4e7;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .result-body small {
@@ -44,7 +45,7 @@
   width: 100%;
   color: #fff;
   background: linear-gradient(90deg, #ef4444 0%, #f43f5e 100%);
-  font-size: 0.86rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 700;
@@ -72,7 +73,7 @@
   }
 
   .result-wrap p {
-    font-size: 0.96rem;
+    font-size: 0.9rem;
     letter-spacing: 0.06em;
   }
 
