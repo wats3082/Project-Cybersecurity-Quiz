@@ -56,6 +56,12 @@
   filter: brightness(0.95);
 }
 
+.action-btn:focus-visible {
+  outline: 2px solid #fda4af;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.26), 0 10px 22px rgba(239, 68, 68, 0.3);
+}
+
 .action-btn-text {
   text-align: center;
 }
