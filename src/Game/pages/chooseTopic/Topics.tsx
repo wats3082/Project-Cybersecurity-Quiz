@@ -71,8 +71,8 @@ const Topics:FC = ():ReactElement => {
     <div className="topics-wrap container">
       <div className="welcome-wrap surface-card">
         <span className="welc-message">Cyber Defense Briefing</span>
-        <span className="welc-heading">Welcome to <strong>BrainQuiz</strong></span>
-        <span className="welc-feeling">Select one or more topics to begin your security challenge.</span>
+        <span className="welc-heading"><strong>Cybersecurity Quiz</strong></span>
+        <span className="welc-feeling">Study a subject: cybersecurity, coding, physical security, patching, responsible data handling, privacy</span>
       </div>  
       
       <div className="topics">
