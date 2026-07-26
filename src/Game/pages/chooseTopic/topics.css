@@ -117,10 +117,23 @@
   border: none;
   border-radius: 12px;
   box-shadow: 0 10px 22px rgba(239, 68, 68, 0.3);
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, filter 0.16s ease;
+}
+
+.start-btn:hover:not(.disabled-btn) {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+  box-shadow: 0 12px 24px rgba(239, 68, 68, 0.36);
+}
+
+.start-btn:active:not(.disabled-btn) {
+  transform: translateY(0);
+  filter: brightness(0.95);
 }
 
 .disabled-btn {
-  background: #52525b;
+  background: linear-gradient(90deg, #7f1d1d 0%, #881337 100%);
   opacity: 0.55;
   pointer-events: none;
   box-shadow: none;

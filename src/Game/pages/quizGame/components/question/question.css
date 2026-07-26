@@ -40,15 +40,20 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  transition: transform 0.16s ease, box-shadow 0.16s ease, filter 0.16s ease;
+  background: linear-gradient(90deg, #ef4444 0%, #f43f5e 100%);
+  box-shadow: 0 10px 22px rgba(239, 68, 68, 0.3);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, filter 0.16s ease, background 0.16s ease;
 }
 
 .action-btn:hover:not(:disabled) {
   transform: translateY(-1px);
+  filter: brightness(1.08);
+  box-shadow: 0 12px 24px rgba(239, 68, 68, 0.36);
 }
 
 .action-btn:active:not(:disabled) {
   transform: translateY(0);
+  filter: brightness(0.95);
 }
 
 .action-btn-text {
@@ -57,8 +62,7 @@
 
 .help-btn {
   flex: 40%;
-  border: 1px solid rgba(253, 164, 175, 0.28);
-  background: rgba(39, 39, 52, 0.85);
+  border: none;
   justify-content: space-around;
 }
 
@@ -71,7 +75,8 @@
 }
 
 .help-disabled {
-  background: #52525b;
+  background: linear-gradient(90deg, #7f1d1d 0%, #881337 100%);
+  box-shadow: none;
   pointer-events: none;
   opacity: 0.5;
 }
@@ -83,8 +88,6 @@
 
 .next-btn {
   flex: 60%;
-  background: linear-gradient(90deg, #ef4444 0%, #f43f5e 100%);
-  box-shadow: 0 10px 22px rgba(239, 68, 68, 0.32);
 }
 
 @media (max-width: 719px) {
