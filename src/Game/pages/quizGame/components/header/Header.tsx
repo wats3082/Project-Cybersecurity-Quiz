@@ -18,8 +18,8 @@ const Header:FC = (): ReactElement => {
     <>
       <div className="header container surface-card">
         <div className="header-topline">
-          <span className="score">Score: {score}</span>
-          <span className="index">Question {currentQuestionIndexShow} of {totalQuestions}</span>
+          <span className="score"><small className="meta-label">Score</small>{score}</span>
+          <span className="index"><small className="meta-label">Progress</small>Question {currentQuestionIndexShow} of {totalQuestions}</span>
           <span className="progress-percentage">{progress}%</span>
         </div>
         <div className="progress-track">

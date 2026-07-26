@@ -1,7 +1,7 @@
 .result-wrap {
   width: 100%;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 2px 0 20px;
 }
 
 .result-header {
@@ -12,7 +12,7 @@
 
 .result-wrap p {
   color: #ffffff;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -21,7 +21,7 @@
 .result-body {
   margin-top: 10px;
   border-radius: 16px;
-  padding: 16px;
+  padding: 20px 18px;
 }
 
 .result-body span,
@@ -30,8 +30,9 @@
 }
 
 .result-body span {
-  margin: 10px 0;
+  margin: 12px 0;
   color: #e4e4e7;
+  line-height: 1.5;
 }
 
 .result-body small {
@@ -57,10 +58,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .score-amount {
   font-weight: 700;
   color: #fb7185;
+}
+
+@media (max-width: 560px) {
+  .result-header {
+    padding: 15px 12px;
+  }
+
+  .result-wrap p {
+    font-size: 0.96rem;
+    letter-spacing: 0.06em;
+  }
+
+  .result-body {
+    padding: 16px 14px;
+  }
 }

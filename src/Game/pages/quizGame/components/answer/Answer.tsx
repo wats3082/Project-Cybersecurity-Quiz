@@ -47,10 +47,17 @@ const Answer:FC<AnswerProps> = ({answer, index, onSelectAnswer, selectedAnswer, 
     ? "help-answer"
     : null
 
+  const isSelected =
+    selectedAnswer
+      &&
+    selectedAnswer === answer
+    ? "selected-answer"
+    : null
+
   return(
     <>
       <div 
-        className={`answer ${isCorrect} ${isWrong} ${isDisabled} ${help}`}
+        className={`answer ${isCorrect} ${isWrong} ${isDisabled} ${help} ${isSelected}`}
         onClick={() => onSelectAnswer(answer)}
       >
         <div className="answer-option">
