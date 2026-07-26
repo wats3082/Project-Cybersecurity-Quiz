@@ -21,7 +21,7 @@ const ShowResult:FC = ():ReactElement => {
     <div className="result-wrap">
       
       <div className="result-header">
-        <p>Parabéns 👏👏👏</p>
+        <p>Great job 👏👏👏</p>
       </div>
       
       <div className="result-body container">
@@ -35,13 +35,13 @@ const ShowResult:FC = ():ReactElement => {
           <small className="score-amount">{score}</small>
         </div>
 
-        <span>Acertou {correctAnswers} de {totalQuestions} questões</span>
+        <span>You got {correctAnswers} of {totalQuestions} questions correct</span>
         
         <button 
           className="reset-btn"
           onClick={() => dispatch && dispatch({type:allowedActions.RESET_GAME, payload:null})}
         >
-          Novo jogo
+          New game
         </button>
 
       </div>

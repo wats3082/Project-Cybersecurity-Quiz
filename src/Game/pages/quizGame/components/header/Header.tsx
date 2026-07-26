@@ -16,8 +16,8 @@ const Header:FC = (): ReactElement => {
   return (
     <>
       <div className="header">
-        <span className="score">Pontos: {score}</span>
-        <span className="index">Questão {currentQuestionIndexShow} de {totalQuestions}</span>
+        <span className="score">Score: {score}</span>
+        <span className="index">Question {currentQuestionIndexShow} of {totalQuestions}</span>
         <span className="score" style={{marginTop: ".5rem"}}>{getLifeIcons(life)}</span>
       </div>
     </>
